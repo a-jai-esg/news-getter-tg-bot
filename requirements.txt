@@ -1,0 +1,8 @@
+uvicorn[standard]
+gunicorn
+httpx
+aiohttp
+asyncio
+quart
+quart-cors
+python-dotenv
