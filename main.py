@@ -10,7 +10,7 @@ app = Quart(__name__)
 app = cors(app, allow_origin="*")
 
 # Target Host URLs and Mode
-SYSTEM_MODE = "development"  # "production" or "development"
+SYSTEM_MODE = os.environ.get("MODE") # "production" or "development"
 
 # Register blueprints
 from controllers.news_controller import news_controller
